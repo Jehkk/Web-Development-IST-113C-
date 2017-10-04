@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 100px;
+  background-color: #bcd2d0;    
+}
+
+
+.content {
+  float: left;                  /* Add this */
+  width: 650px;
+  height: 800px;
+  background-color: #e5c3c6;
+  padding: 20px;
+}
+
+.footer {
+  clear: both;            /* Add this */
+  height: 200px;
+  overflow: hidden;
+  background-color: #bcd2d0;
+}
+
+.sidebar {
+  float: left;                  /* Add this */
+  width: 200px;
+  height: 800px;
+  background-color: #e1e9b7;    
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  overflow: hidden;
+  background-color: #EAEDF0;
+}
+
+.column {
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  height: 160px;
+  background-color: #B2D6FF;    /* Medium blue */
+}
+
+.article-image {
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 25px;
+  border-radius: 40px;
+  background-color: #D6E9FE;
+}
+
+.username {
+  margin-top: 30px;
+}
+
+.comment {
+  margin: 10px;
+  overflow: hidden;  /* This is important */
+}
+
+li{
+	margin-left:30px;
+	margin-top:30px;
+}
+
+a{
+	 text-decoration:  none;
+}
