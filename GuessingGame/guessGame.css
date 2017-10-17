@@ -1,0 +1,16 @@
+#enterb{
+	display:block;
+    margin:0 auto;
+	width:9%;	
+}
+
+#user{
+	display:block;
+    margin:0 auto; 
+}
+
+#response{
+	display:block;
+    margin:0 auto; 
+	text-align: center;
+}
