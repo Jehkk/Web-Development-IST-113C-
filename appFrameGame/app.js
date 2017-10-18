@@ -1,5 +1,9 @@
 "use strict";
-
+	var ok;
+	ok = true;
+	var num = 1;
+	var tries = 0;
+	
 // using a function contructor form to create an object
 function MyApp()
 {
@@ -15,33 +19,28 @@ function MyApp()
 	this.start = function()
 	{
 		$("#app>header").append(version);
+		$('#enterb').on('click', function(){Game();})
 		setStatus("ready");
+	}
 
-		alert("Welcome to the Guessing Game.");
 
+
+	function Game(){
+	if(window.ok){
+		window.num = document.getElementById("user").value;
+		document.getElementById("response").innerHTML = num;
 		
-var num = parseInt(prompt("Player 1 enter a number: "));
+		document.getElementById("response").innerHTML = "Player 2 Enter a number: ";
+		ok = false;
+	}
+	else{
+		var num2 = document.getElementById("user").value;	
+		if(num2 > window.num){document.getElementById("response").innerHTML = "That number was too high."; window.tries+=1;}
+		else if(num2 < window.num){document.getElementById("response").innerHTML = "That number was too low."; window.tries+=1;}
+		else if (window.num == num2){ document.getElementById("response").innerHTML = "You guessed it! It took "+window.tries+" tries to get it!";} 
 
-		var tries = 0;
-
-		do{
-   
- 			tries+=1;
-    
-			var num2 = parseInt(prompt("Player 2 enter a number: "));
-
-
-   			 if(num2 > num){alert("That number was too high.");}
-   
- 			else if(num2 < num){alert("That number was too low.");}
-
-
-		}while(num2 != num)
-
-		alert("You guessed it! The number was "+ num);
-
-		alert("It took "+tries+" tries to get it!");
-	};
+		}
+	}
 
 
 } // end MyApp
@@ -57,3 +56,6 @@ $(function() {
 	window.app = new MyApp();
 	window.app.start();
 });
+
+
+
