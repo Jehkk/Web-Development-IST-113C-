@@ -60,8 +60,7 @@ function TaskAtHandApp(){
 	function onChangeTaskName($input){
 		$input.hide();
 		var $span = $input.siblings("span.task-name");
-		if($input.val())
-		{
+		if($input.val()){
 			$span.text($input.val());
 		}
 		$span.show();
@@ -88,8 +87,7 @@ function TaskAtHandApp(){
 	
 	function loadTaskList(){
 		var tasks = appStorage.getValue("taskList");
-		if(tasks)
-		{
+		if(tasks){
 			for(var i in tasks)
 				addTaskElement(tasks[i]);
 		}
