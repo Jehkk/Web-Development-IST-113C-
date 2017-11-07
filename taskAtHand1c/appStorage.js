@@ -29,9 +29,7 @@ function AppStorage(appName)
 		if(this.localStorageSupported){
 			for(var key in localStorage){
 				if(isAppKey(key)){
-					//Removes prefix if applicable
 					if(prefix) key = key.slice(prefix.length);
-					//Checks filter
 					if(!filter || filter(key))
 						keys.push(key);
 				}
