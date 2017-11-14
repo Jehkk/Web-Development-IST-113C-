@@ -1,0 +1,8 @@
+:root {
+	--filename: url(../images/meme.png);
+}
+#app {
+  background-color: #FFF;
+  background: var(--filename);
+}
+
