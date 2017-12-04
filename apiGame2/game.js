@@ -14,7 +14,6 @@ function TitleScreen(){
 		Choose();
 	});	
 }
-
 function Choose(){
 	for(i=0;i<3; i++){ newQuestion(i); }
 	
@@ -52,10 +51,7 @@ function Choose(){
 			Answer(answer3);
 		});	
 	}
-	
-	
 }
-
 function Answer(a){
 	document.getElementById('adiv').style.visibility = "visible";
 	console.log(a);
@@ -83,7 +79,6 @@ function Answer(a){
 	});	
 	
 }
-
 function newQuestion(num){
     let request = new XMLHttpRequest();
     request.open('GET', 'http://jservice.io/api/random');  
@@ -109,7 +104,6 @@ function newQuestion(num){
     });                 
     request.send();    
 }
-
 function GameOver(win){
 	document.getElementById("qdiv").style.visibility = "hidden";
 	document.getElementById("adiv").style.visibility = "hidden";
@@ -130,7 +124,6 @@ function GameOver(win){
 			Choose();
 		});	
 }
-
 
 $(function() {
   window.app = new TitleScreen();
