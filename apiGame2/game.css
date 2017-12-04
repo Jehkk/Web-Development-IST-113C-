@@ -4,7 +4,6 @@ body {
   color: #414141;               /* Dark gray */
   background-color: #EEEEEE;    /* Light gray */
   font-size: 18px;
-  
 }
 
 h1{
@@ -44,6 +43,7 @@ h1{
 .start{
 	margin-top:3.5%;
 	margin-left:45%;
+	animation:fading 5s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}
 }
 p{
 	margin-left:10% ;
