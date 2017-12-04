@@ -1,0 +1,97 @@
+body {
+  background-image: url("Images/3.jpg");
+  background-repeat: repeat-y;
+  color: #414141;               /* Dark gray */
+  background-color: #EEEEEE;    /* Light gray */
+  font-size: 18px;
+  
+}
+
+h1{
+    font-size: 4.6em;
+}
+
+.header {
+  position:fixed;
+  height: 155px;
+  width:100%;
+  left:0;
+  top: 0;
+  border-style: solid;
+  border-width: 5px;
+  background-color: #8d8d8d;    
+}
+
+.footer {
+  position:absolute;
+  left: 0;
+  bottom:0;
+  width:99.5%;
+  height : 100px;   
+  background:#6cf;
+  background-color: #8d8d8d;
+  border-style: solid;
+    border-width: 5px;
+}
+.main {
+  margin-top: 100px;
+  display: inline-block;
+  width: 90%;
+  height: 800px;
+  padding: 20px;
+}
+
+.start{
+	margin-top:3.5%;
+	margin-left:45%;
+}
+p{
+	margin-left:10% ;
+	text-align: center;
+}
+.questions{
+	visibility: hidden;
+	margin-left: 10%;
+	text-align: center;
+}
+
+.qbutton{
+	font-size: 15pt;
+	width: 50%;
+	height: 20%;
+}
+
+img{
+		margin-left:30%;
+}
+
+h2{
+	color:#EEEEEE;
+}
+
+.answerbox{
+	margin-left: 40%;
+	width: 30%;
+	font-size: 15pt;
+}
+
+.subbutton{
+	height: 5%;
+	width: 20%;
+	font-size: 15pt;
+	margin-left: 45%;
+}
+
+.answerSel{
+	visibility: hidden;
+}
+
+.again{
+	visibility: hidden;
+	height: 5%;
+	width: 20%;
+	font-size: 15pt;
+	position: absolute;
+	margin-left: -33%;
+}
+
